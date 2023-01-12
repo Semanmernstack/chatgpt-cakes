@@ -34,7 +34,7 @@ export default function Home() {
         <input value={messageInput} onChange ={(e) => setMessageInput(e.target.value)} className='text-centre items-center border p-1' type="text " placeholder='search for cakes' />
         <button type='submit' className='w-[320px] mt-7 animate-pulse p-2 rounded-lg bg-pink-900'>Generate</button>
       </form>
-      <div className="text-sm mt-3 lg:text-lg">{result}</div>
+      <div className="text-sm mt-3 lg:text-large">{result}</div>
     </div>
      
 
