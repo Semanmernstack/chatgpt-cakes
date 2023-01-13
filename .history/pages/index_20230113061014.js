@@ -8,15 +8,15 @@ export default function Home() {
 
   const onSubmit = async(e) =>{
     e.preventDefault()
-    const response = await fetch("api/cakes-type", {
+    const resp = await fetch("api/cakes-type", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "content-Type": "application/json",
       },
-      body: JSON.stringify({ message:messageInput}),
+      body:JSON.stringify({ message:messageInput})
     })
-    const data = await response.json()
-    setResult(data.result.replaceAll('\n', '<br/>'))
+    const data = await resp.json()
+    setResult(data.result)
   }
 
 

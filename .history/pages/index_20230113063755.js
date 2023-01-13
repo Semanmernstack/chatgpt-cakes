@@ -11,12 +11,12 @@ export default function Home() {
     const response = await fetch("api/cakes-type", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "content-Type": "application/json",
       },
       body: JSON.stringify({ message:messageInput}),
     })
     const data = await response.json()
-    setResult(data.result.replaceAll('\n', '<br/>'))
+    setResult(data.result.replaceALL('\n'))
   }
 
 

@@ -16,7 +16,7 @@ export default function Home() {
       body: JSON.stringify({ message:messageInput}),
     })
     const data = await response.json()
-    setResult(data.result.replaceAll('\n', '<br/>'))
+    setResult(data.result)
   }
 
 
