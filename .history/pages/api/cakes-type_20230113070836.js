@@ -24,5 +24,5 @@ export default async function (req, res) {
     console.log(completion.data)
 }
 function generatePrompt({message}) {
-    return `lists of cakes and their recipes`
+    return`lists of cakes and their recipes`
 }

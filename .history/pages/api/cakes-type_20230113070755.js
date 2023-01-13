@@ -21,8 +21,8 @@ export default async function (req, res) {
     });
   
     res.status(200).json({ result: completion.data.choices[0].text })
-    console.log(completion.data)
+    console.log(response.data)
 }
 function generatePrompt({message}) {
-    return `lists of cakes and their recipes`
+    return`lists of cakes and their recipes`
 }
